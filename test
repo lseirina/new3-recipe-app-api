@@ -1,0 +1,23 @@
+
+my_dict = {
+    'a': 34,
+    "b": 45,
+    "c": 12,
+    'd': 21
+}
+res = []
+ans = []
+for key, value in my_dict.items():
+    res.append(value)
+s_res = sorted(res[:-2])
+
+for key, value in my_dict.items():
+    if value in s_res:
+        ans.append(key)
+print(ans)
+
+
+
+
+
+
